@@ -27,7 +27,7 @@ plt.title('S(q) zoom')
 plt.gcf().set_size_inches((24, 6))
 
 ### Read lammps displacements
-strFile = './npttest.displacements'
+strFile = './test.displacements'
 
 dyn = read_lammps_disp(strFile, 15000) #max of 15000 frames
 dyn = dyn[:,0::3,:] # consider only oxygens which is every 3rd entry

@@ -8,8 +8,8 @@ Author: Martin Fitzner, Dec. 2020
 For a complete and self-consistent run of everything two things are needed: i) the radial distribution function and ii) the atomic displacements, both at the same thermodynamic state.
 Then the follwing stepts yield all quantities:
 * Calculate the structure factor $S(q)$ from the radial distribution function $g(r)$. The code provides a function to use the VMD output for $g(r)$, which is just a two column file
-* From $S(q)$ typically the position of the first peak is taken for further calculatiions, denoted as $q_0$
-* With $q_0$ and the displacements $F(q_0, t)$ and $\chi_4(q_0,t)$ are calulated
+* From $S(q)$ typically the position of the first peak is taken for further calculations, denoted as $q_0$
+* With $q_0$ and the displacements $F(q_0, t)$ and $\chi_4(q_0,t)$ are calculated
 
 A helper function for reading LAMMPS displacemenst output is provided
 
